@@ -1,0 +1,28 @@
+
+.navbar{
+    text-align: center;
+    color: white;
+    background-color: #060059;
+}
+.navbar p{
+    font-size: 2rem;
+}
+#rcb{
+    text-align: center;
+}
+#rcb p{
+    /* padding: 100px; */
+    font-size: 2rem;
+    color: #060059;
+}
+hr{
+   /* border:  1px  #060059; */
+}
+#rudra p{
+    /* padding: 100px; */
+    font-size: 2rem;
+    color: #060059;
+}
+#rudra h1{
+    text-align: center;
+}

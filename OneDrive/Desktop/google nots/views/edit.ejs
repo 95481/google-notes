@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>edit</title>
+    <link rel="stylesheet" href="../public/edit.css">
+</head>
+<body>
+  <h1>EDIT YOUR NOTE...</h1>
+    <form method="post" action="/form/<%=editform._id%>?_method=put">
+        <textarea name="title"><%=editform.title %></textarea>
+        <textarea name="description"><%=editform.description %></textarea>
+    <button>edit</button>
+    </form>
+
+</body>
+</html>

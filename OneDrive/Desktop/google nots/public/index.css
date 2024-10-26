@@ -1,0 +1,126 @@
+/* Body and container styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General card styling */
+.container {
+    border-radius: 5%;
+    border: 1px solid whitesmoke;
+    background-color: rgb(0, 0, 0);
+    color: rgb(197, 189, 189);
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 16px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* General form container styling */
+.upper-container {
+    max-width: 600px;
+    margin: 16px auto;
+    padding: 0;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Form styling */
+.upper-container form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #000;
+}
+
+/* Title input styling */
+.upper-container input[name="title"] {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+}
+
+/* Description textarea styling */
+.upper-container textarea[name="description"] {
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    min-height: 60px;
+    max-height: 120px;
+    resize: vertical;
+    outline: none;
+}
+
+/* Button styling */
+.upper-container button,
+.container button {
+    margin-top: 12px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.upper-container button:hover,
+.container button:hover {
+    background-color: #313131;
+}
+
+/* Input focus effect */
+.upper-container input:focus,
+.upper-container textarea:focus {
+    border-color: #4285f4;
+    box-shadow: inset 0 0 3px rgba(66, 133, 244, 0.5);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .upper-container,
+    .container {
+        width: 90%;
+        margin: 16px auto;
+    }
+
+    .upper-container input[name="title"],
+    .upper-container textarea[name="description"] {
+        font-size: 14px;
+    }
+
+    .upper-container button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upper-container,
+    .container {
+        width: 95%;
+        margin: 8px auto;
+    }
+
+    .upper-container input[name="title"],
+    .upper-container textarea[name="description"],
+    .upper-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

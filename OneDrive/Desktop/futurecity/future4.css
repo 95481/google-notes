@@ -1,0 +1,21 @@
+img{
+    padding: 20px;
+}
+#soni{
+    display: flex;
+}
+p{
+    font-size: 2rem;
+}
+hr{
+    border: 1px solid black;
+}
+*{
+background-color: goldenrod;
+}
+div:hover{
+    box-shadow: 0 8px 16px black;
+}
+img:hover{
+    box-shadow: 0 8px 16px rgb(216, 84, 84);
+}

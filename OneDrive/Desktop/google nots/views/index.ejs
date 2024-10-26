@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body><div class="upper-container">
+    Create a New Note..
+    <form method="post" action="/form">
+   <input placeholder="Title" name="title">
+   <textarea name="description" placeholder="Take a Note.." ></textarea>
+   <button>Close</button>
+</form></div>
+        <%for(form of forms) { %><div class="container">
+            
+            
+            <p>Title : <%=form.title%></p>
+            <p>Description : <%=form.description%></p>
+            <p> created_at : <%=form.createdAt.toString().split(" ")[4]%></p>
+            <p> <%=form.createdAt.toString().split(" ").slice(0,4).join(" ")%></p>
+            <form method="get" action="/form/<%=form._id%>/edit" ><button>edit</button></form>
+            <form method="post" action="/form/<%=form._id%>?_method=delete">
+              <button>delete</button>
+            </form></div>
+            <% } %>
+</body>
+</html>
